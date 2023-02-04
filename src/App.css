@@ -53,3 +53,6 @@ li {
     align-items: center;
     padding-bottom: 4px;
 }
+.text-red {
+    color: red;
+}
