@@ -59,26 +59,25 @@ export const App = () => {
   return (
     <>
     <BrowserRouter>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/contact">contact</Link></li>
-      </ul>
+        <p>TODOアプリです</p>
       <Switch>
         <Route exact path="/">
+          <Link to="/contact">TODOアプリへ</Link>
           <Home />
         </Route>
         <Route path="/contact">
+          <Link to="/">Homeへ</Link>
           <Contact />
+          <InputTodo todoText={todoText} onChange={onChangeTodoText} onClick={onClickAdd}/>
+      
+          <InCompleteTodos incompleteTodls={incompleteTodls} onClickComplete={onClickComplete} onClickDelete={onClickDelete} />
+
+          <CompleteTodos completeTodls={completeTodls} onClickBackTodo={onClickBackTodo} />
         </Route>
         <Route>
           <p>Not Found</p>
         </Route>
       </Switch>
-      <InputTodo todoText={todoText} onChange={onChangeTodoText} onClick={onClickAdd}/>
-      
-      <InCompleteTodos incompleteTodls={incompleteTodls} onClickComplete={onClickComplete} onClickDelete={onClickDelete} />
-
-      <CompleteTodos completeTodls={completeTodls} onClickBackTodo={onClickBackTodo} />
     </BrowserRouter>
     </>
   )
