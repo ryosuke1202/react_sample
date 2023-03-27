@@ -4,7 +4,7 @@ const ColorfullMessage = (props) => {
     const { color, children } = props;
     const contentStyle = {
         color,
-        fontSize: '18px',
+        fontSize: '17px',
     }
     return (
       <>
