@@ -9,6 +9,7 @@ const ColorfullMessage = (props) => {
     return (
       <>
         <p style={contentStyle}>{children}</p>
+          alskfj
       </>
     );
 }

@@ -9,7 +9,7 @@ export const CompleteTodos = (props) => {
             {completeTodls.map((todo, index) => {
                 return (
                 <div index={todo} className="list-row">
-                    <li>{todo}</li>
+                    <li>{todo}</li>asf
                     <button onClick={() => onClickBackTodo(index)}>戻す</button>
                 </div>
                 );
